@@ -1,0 +1,264 @@
+.nav-address-page {
+}
+
+/*    checkout step style   */
+.checkout-step-list {
+  padding: 20px 0;
+}
+
+.checkout-step-list > ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.checkout-step-list > ul > li {
+  flex: 1 1 auto;
+  font-weight: 800;
+  padding-bottom: 15px;
+  position: relative;
+  border-bottom: 2px solid #CCCCCC;
+}
+
+.checkout-step-list > ul > li:after {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -7px;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #CCCCCC;
+}
+
+/*  选中状态  */
+.checkout-step-list > ul > li.cur {
+  color: #D1434A;
+  border-bottom: 2px solid #D1434A;
+}
+
+.checkout-step-list > ul > li.cur:after {
+  background: #D1434A !important;
+}
+
+/*    checkout shopping  address style   */
+.checkout-shopping-address {
+  text-align: left;
+}
+
+.checkout-shopping-address h4 {
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*    checkout shopping  address style   */
+.checkout-shopping-method {
+  text-align: left;
+}
+
+.checkout-shopping-method h4 {
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*  checkout next step style  */
+.nav-address-page .checkout-next-step {
+  overflow: hidden;
+}
+
+.nav-address-page .checkout-next-step > a.previous-btn,
+.nav-address-page .checkout-next-step > a.next-btn {
+  display: inline-block;
+  color: #fff;
+  padding: 0 30px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .25em;
+  white-space: nowrap;
+  font-family: moderat, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-address-page .checkout-next-step > a.previous-btn {
+  float: left;
+  border: 1px solid #d1434a;
+  color: #d1434a;
+}
+
+.nav-address-page .checkout-next-step > a.previous-btn:hover {
+  background-color: #d1434a;
+  color: #ffffff;
+}
+
+.nav-address-page .checkout-next-step > a.next-btn {
+  float: right;
+  background-color: #d1434a;
+  border-color: #d1434a;
+}
+
+.address-list > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.address-list > ul > li {
+  border: 1px solid #cccccc;
+  width: 230px;
+  height: 150px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  transition: all .3s ease-in-out;
+}
+
+.address-list > ul > li.selected {
+  border: 1px solid #ee7a23;
+}
+
+.address-list > ul > li:hover {
+  border: 1px solid #ee7a23;
+  transform: translate(0, -5px);
+}
+
+.address-list .address-info > span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.address-list .address-opt {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.address-list .address-opt > span {
+  color: #ee7a23;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.address-list .address-opt > img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+}
+
+.address-list .address-new {
+  text-align: center;
+}
+
+.address-list .address-new > * {
+  display: block;
+}
+
+.address-list .address-new > img {
+  position: relative;
+  left: calc(50% - 20px);
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.show-more-address {
+  cursor: pointer;
+  margin: 10px 0;
+  position: relative;
+  left: 50%;
+  font-weight: 700;
+  animation-name: seeColors;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+.show-more-address > img {
+  width: 16px;
+  height: 16px;
+}
+
+@keyframes seeColors {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+
+.address-modal > div.error-wrapper {
+  color: #ff0000;
+}
+
+.address-modal button {
+  width: 40%;
+  height: 40px;
+  margin-top: 80px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #009DE6;
+  border: none;
+}
+
+.address-modal button:hover {
+  background-color: #61b1ef;
+}
+
+.shipping-method > ul {
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.shipping-method > ul > li {
+  float: left;
+  width: 230px;
+  height: 150px;
+  border: 1px solid #cccccc;
+  font-size: 16px;
+  line-height: 1.625;
+  cursor: pointer;
+  color: #333;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  transition: all .3s ease-in-out;
+}
+
+.shipping-method > ul > li:hover {
+  border-color: #ee7a23;
+}
+
+.shipping-method li .price {
+  height: 26px;
+  font-weight: 700
+}
+
+.shipping-method li .shipping-tips {
+  height: 44px;
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 14px
+}
+
+.shipping-method li .shipping-tips p {
+  line-height: 1.2587;
+  color: #999
+}

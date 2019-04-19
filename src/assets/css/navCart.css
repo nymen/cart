@@ -1,0 +1,15 @@
+.delete-product > p {
+  margin-bottom: 50px;
+}
+
+.delete-product > button.btn-primary{
+  margin-right: 20px;
+}
+
+.delete-product > button.btn-success{
+  margin-left: 20px;
+}
+
+.checkout-btn {
+  cursor: pointer;
+}

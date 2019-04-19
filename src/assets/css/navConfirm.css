@@ -1,0 +1,76 @@
+.price-count-wrap {
+  margin-top: 40px;
+}
+
+.price-count ul {
+  display: table;
+  width: 100%
+}
+
+.price-count li {
+  display: table-row;
+  font-size: 18px
+}
+
+.price-count li span {
+  display: table-cell;
+  height: 36px;
+  padding-right: 10px;
+  vertical-align: top;
+  text-align: right
+}
+
+.price-count li span:first-child {
+  color: #999
+}
+
+.price-count li span:last-child {
+  width: 20px;
+  padding-left: 10px;
+  white-space: nowrap
+}
+
+.price-count .order-total-price span:last-child {
+  color: #d1434a;
+  font-size: 1.125em;
+  font-weight: 700
+}
+
+.nav-confirm-page .checkout-next-step {
+  overflow: hidden;
+}
+
+.nav-confirm-page .checkout-next-step > a.previous-btn,
+.nav-confirm-page .checkout-next-step > a.next-btn {
+  display: inline-block;
+  color: #fff;
+  padding: 0 30px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .25em;
+  white-space: nowrap;
+  font-family: moderat, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-confirm-page .checkout-next-step > a.previous-btn {
+  float: left;
+  border: 1px solid #d1434a;
+  color: #d1434a;
+}
+
+.nav-confirm-page .checkout-next-step > a.previous-btn:hover {
+  background-color: #d1434a;
+  color: #ffffff;
+}
+
+.nav-confirm-page .checkout-next-step > a.next-btn {
+  float: right;
+  background-color: #d1434a;
+  border-color: #d1434a;
+}
